@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        body {
+            background: url(./img/wall.jpg);
+        }
+
+        .main {
+            width: 1000px;
+            height: 550px;
+            margin: 50px auto;
+            overflow: hidden;
+            border-radius: 40px;
+            border: 2px solid blue;
+        }
+
+        li {
+            width: 199px;
+            float: left;
+            border-left: 1px solid #fff;
+            position: relative;
+            transition: all 0.3s;
+        }
+
+        img {
+            width: 1000px;
+            height: 550px;
+        }
+
+        /* .flag {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            color: #fff;
+            background: rgba(0, 0, 0, 0, 5);
+        } */
+
+        .main:hover li {
+            width: 40px;
+        }
+
+        .main li:hover {
+            width: 835px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ul.main>(li>img[src="./img/$.jpeg"]+div.flag{tupian})*5 -->
+    <ul class="main">
+        <li>
+            <img src="./img/1.jpeg" alt="">
+            <!-- <div class="flag">tupian</div> -->
+        </li>
+        <li>
+            <img src="./img/2.jpeg" alt="">
+            <!-- <div class="flag">tupian</div> -->
+        </li>
+        <li>
+            <img src="./img/3.jpeg" alt="">
+            <!-- <div class="flag">tupian</div> -->
+        </li>
+        <li>
+            <img src="./img/4.jpeg" alt="">
+            <!-- <div class="flag">tupian</div> -->
+        </li>
+        <li>
+            <img src="./img/5.jpeg" alt="">
+            <!-- <div class="flag">tupian</div> -->
+        </li>
+    </ul>
+</body>
+
+</html>
