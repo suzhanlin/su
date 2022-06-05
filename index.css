@@ -14,6 +14,8 @@
   display: grid;
   /* 1fr：自适应高度 */
   grid-template-rows: 60px 1fr 80px;
+  background: url(./img/daxue.jpg
+  
 }
 .img_logo {
   width: 50px;
