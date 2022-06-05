@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css 动效</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: url(./img/wall.jpg);
+        }
+
+        .con {
+            margin: 100px auto;
+            border: 3px solid #568bc7;
+            width: 1000px;
+            height: 500px;
+            overflow: hidden;
+        }
+
+        .con ul {
+            display: flex;
+        }
+
+        .con li {
+            width: 200px;
+            height: 500px;
+            list-style: none;
+            border: 0px solid #194b8d;
+            box-shadow: 0 0 25px #000;
+            transition: all 0.3s;
+        }
+
+        .con li img {
+            display: block;
+            width: 1000px;
+            height: 550px;
+        }
+
+        .con ul:hover li {
+            width: 40px;
+        }
+
+        .con ul li:hover {
+            width: 840px;
+        }
+
+        div {
+            border-radius: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="con">
+        <ul>
+            <li><img src="./img/1.jpeg" alt=""> </li>
+            <li><img src="./img/2.jpeg" alt=""> </li>
+            <li><img src="./img/3.jpeg" alt=""> </li>
+            <li><img src="./img/4.jpeg" alt=""> </li>
+            <li><img src="./img/5.jpeg" alt=""> </li>
+        </ul>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+.zhengti {
+  /* 百分百浏览器可视宽度 */
+  width: 100vw;
+  /* 百分百最大宽度，防止出现横向滚动条 */
+  max-width: 100%;
+  height: 100vh;
+  /* 网格布局 */
+  display: grid;
+  /* 1fr：自适应高度 */
+  grid-template-rows: 60px 1fr 80px;
+}
+.img_logo {
+  width: 50px;
+  height: 50px;
+}
+.mingzi {
+  margin-left: 5px;
+  color: #fff;
+}
+header,
+main,
+footer {
+  padding: 0px 10vw;
+}
+header {
+  display: grid;
+  /* max-content：空间随内容变化 */
+  grid-template-columns: max-content max-content 1fr;
+  align-items: center;
+  background: #333;
+  z-index: 1;
+}
+
+.nav {
+  display: flex;
+  /* 元素间距 */
+  gap: 50px;
+  height: 100%;
+  align-items: center;
+  justify-content: flex-end;
+}
+.navlist a {
+  color: #fff;
+  display: block;
+}
+.navlist a:hover {
+  background: #666;
+}
+.list {
+  float: left;
+  width: 80px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+.list_list {
+  background: #333;
+  display: none;
+  border-radius: 8px;
+}
+.list_list li {
+  border-top: 1px solid #fff;
+}
+.list:hover .list_list {
+  display: block;
+}
+footer {
+  background: #333;
+}
